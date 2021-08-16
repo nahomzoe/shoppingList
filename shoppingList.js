@@ -1,33 +1,44 @@
 const shoppingList = 
 [
     {
-    name: 'Milk',
-    quantity: 5,
-    checked: true
+        name: 'Milk',
+        quantity: 5,
+        checked: true
     },
     {
-    name: 'Suger',
-    quantity: 1,
-    checked: false
+        name: 'Oil',
+        quantity: 3,
+        checked: true
     },
     {
-    name: 'Salt',
-    quantity: 1,
-    checked: True
+        name: 'Banana',
+        quantity:'6',
+        checked: false
     },
     {
-    name: 'Oil',
-    quantity: 3,
-    checked: false
+        name: 'Salt',
+        quantity: 1,
+        checked: true
     },
     {
-    name: 'Pizza',
-    quantity: 9,
-    checked: true
+        name: 'Sugar',
+        quantity: 2,
+        checked: false
     },
     {
-    name: 'Meat',
-    quantity: 2,
-    checked: false
+        name: 'Corn',
+        quantity: 8,
+        checked: true
+    },
+    {
+        name: 'Grapes',
+        quantity: 4,
+        checked: false
+    },
+    {
+        name: 'Orange',
+        quantity: 7,
+        checked: true   
     }
+
 ]
