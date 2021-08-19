@@ -76,5 +76,5 @@ function addItems() {
     )
     return updatedItems
 }
-const updatedItems = addItems
+const updatedItems = addItems()
 console.log(updatedItems)
