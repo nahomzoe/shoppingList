@@ -57,7 +57,7 @@ const uncheckedItemsCount = getShoppingListSizeUnchecked()
 console.log(uncheckedItemsCount)
 
 function addItems() {
-    const addItems = shoppingList.push(
+    let updatedItems = shoppingList.push(
         {
             name: 'car',
             quantity: 2,
@@ -74,7 +74,7 @@ function addItems() {
             checked: false   
         }
     )
-    return addItems
+    return updatedItems
 }
-const addItems = moreItemsintoList
-console.log(addItems)
+const updatedItems = addItems
+console.log(updatedItems)
