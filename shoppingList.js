@@ -43,14 +43,14 @@ const shoppingList =
 
 ]
 function getShoppingListSize() {
-    const checkedItemsCount = shoppingList.filter((ok) => ok.checked == true)
+    const checkedItemsCount = shoppingList.filter((item) => item.checked == true)
     return checkedItemsCount
 }
 const checkedItemsCount = getShoppingListSize()
 console.log(checkedItemsCount)
 
 function getShoppingListSizeUn() {
-    const uncheckedItemsCount = shoppingList.filter((not) => not.checked == false)
+    const uncheckedItemsCount = shoppingList.filter((item) => item.checked == false)
     return uncheckedItemsCount
 }
 const uncheckedItemsCount = getShoppingListSizeUn()
