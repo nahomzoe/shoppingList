@@ -42,3 +42,8 @@ const shoppingList =
     }
 
 ]
+function getShoppingListSize() {
+const checkedItemsCount = shoppingList.filter((ok) => checked.ok == true)
+return checkedItemsCount
+}
+console.log(checkedItemsCount)
