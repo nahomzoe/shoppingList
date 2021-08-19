@@ -49,14 +49,14 @@ function getShoppingListSize() {
 const checkedItemsCount = getShoppingListSize()
 console.log(checkedItemsCount)
 
-function getShoppingListSizeUn() {
+function getShoppingListSizeUnchecked() {
     const uncheckedItemsCount = shoppingList.filter((item) => item.checked == false)
     return uncheckedItemsCount
 }
-const uncheckedItemsCount = getShoppingListSizeUn()
+const uncheckedItemsCount = getShoppingListSizeUnchecked()
 console.log(uncheckedItemsCount)
 
-function moreItemsintoList() {
+function addItems() {
     const addItems = shoppingList.push(
         {
             name: 'car',
