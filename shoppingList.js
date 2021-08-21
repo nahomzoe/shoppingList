@@ -70,7 +70,7 @@ function addItems() {
         },
         {
             name: 'Football',
-            quantity: 1,
+            quantity: 5,
             checked: false   
         }
     )
