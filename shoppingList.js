@@ -78,3 +78,10 @@ function addItems() {
 }
 const updatedItems = addItems()
 console.log(updatedItems)
+
+function deleteItems(){
+    const removeItem = shoppingList.filter((item) => item.name != 'car')
+    return removeItem
+}
+let filteredList = deleteItems()
+console.log(filteredList)
