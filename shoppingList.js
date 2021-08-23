@@ -87,12 +87,11 @@ let filteredList = deleteItems()
 console.log(filteredList)
 
 function printAll(){
-    const printShoppinglist = shoppingList.forEach((item) => console.log(item.name + - item.quantity + - item.checked))
+    const printShoppinglist = shoppingList.map((item) => item.name + '-' + item.quantity + '-' + item.checked)
     return printShoppinglist
 }
 let printName = printAll()
 console.log(printName)
-
 
 
 
