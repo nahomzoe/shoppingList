@@ -79,17 +79,20 @@ console.log(uncheckedItemsCount)
 const updatedItems = addItems()
 console.log(updatedItems)*/
 
-function addItem(itemName,itemNum,itemChecked) {
+function addItem(itemName,itemQuantity) {
+    if (typeof itemName === 'string' && itemName.length > 0 && typeof itemQuantity === 'number'&& itemQuantity >0){
+   }
+   
     let updatedItems = shoppingList.push(
         { name: itemName,
-          quantity: itemNum,
-          checked: itemChecked
+          quantity: itemQuantity,
+          checked: false
         }
      
     )
     return updatedItems
 }
-const updatedItems = addItem('Book',7,true)
+const updatedItems = addItem('Jebena',4)
 console.log(updatedItems)
 
 
