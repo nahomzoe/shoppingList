@@ -1,4 +1,4 @@
-const shoppingList = 
+let shoppingList = 
 [
     {
         name: 'Milk',
@@ -56,7 +56,7 @@ function getShoppingListSizeUnchecked() {
 const uncheckedItemsCount = getShoppingListSizeUnchecked()
 console.log(uncheckedItemsCount)
 
-function addItems() {
+/*function addItems() {
     let updatedItems = shoppingList.push(
         {
             name: 'car',
@@ -77,13 +77,28 @@ function addItems() {
     return updatedItems
 }
 const updatedItems = addItems()
+console.log(updatedItems)*/
+
+function addItem(itemName,itemNum,itemChecked) {
+    let updatedItems = shoppingList.push(
+        { name: itemName,
+          quantity: itemNum,
+          checked: itemChecked
+        }
+     
+    )
+    return updatedItems
+}
+const updatedItems = addItem('Book',7,true)
 console.log(updatedItems)
 
-function deleteItems(){
-    const removeItem = shoppingList.filter((item) => item.name != 'car')
-    return removeItem
+
+
+function deleteItem(itemName){
+    shoppingList = shoppingList.filter((item) => item.name != itemName)
+    return shoppingList
 }
-let filteredList = deleteItems()
+let filteredList = deleteItem('Football')
 console.log(filteredList)
 
 function printAll(){
@@ -92,6 +107,10 @@ function printAll(){
 }
 let printName = printAll()
 console.log(printName)
+
+
+
+
 
 
 
