@@ -80,17 +80,25 @@ const updatedItems = addItems()
 console.log(updatedItems)*/
 
 function addItem(itemName,itemQuantity) {
+    /*function addItem(itemName, itemQuantity) {
+    if (typeof itemName !== 'string' || itemName.length === 0) {
+        return false;
+    } 
+
+    if (typeof itemQuantity !== 'number' || itemQuantity <= 0) {
+        return false;
+    }*/
+   
+
     if (typeof itemName === 'string' && itemName.length > 0 && typeof itemQuantity === 'number'&& itemQuantity >0){
-   
-   
-    let updatedItems = shoppingList.push(
+    let updatingItems = shoppingList.push(
         { name: itemName,
           quantity: itemQuantity,
           checked: false
         }
      
     )
-    return updatedItems
+    return updatingItems
 }
 }
 const updatedItems = addItem('Jebena',4)
