@@ -81,7 +81,7 @@ console.log(updatedItems)*/
 
 function addItem(itemName,itemQuantity) {
     if (typeof itemName === 'string' && itemName.length > 0 && typeof itemQuantity === 'number'&& itemQuantity >0){
-   }
+   
    
     let updatedItems = shoppingList.push(
         { name: itemName,
@@ -91,6 +91,7 @@ function addItem(itemName,itemQuantity) {
      
     )
     return updatedItems
+}
 }
 const updatedItems = addItem('Jebena',4)
 console.log(updatedItems)
