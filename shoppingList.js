@@ -120,6 +120,14 @@ function printAll(){
 let printName = printAll()
 console.log(printName)
 
+/*function printAll() {
+    for (const {name, quantity, checked} of shoppingList){
+        console.log(name, quantity, checked)
+      }
+}
+const printList = printAll()
+console.log(printList)*/
+
 
 
 
