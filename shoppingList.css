@@ -1,0 +1,76 @@
+/*.Name{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    }*/
+    .body{
+        text-align: center;
+    }
+    .button{
+        width: 120px;
+        height: 40px;
+        border-radius: 12px;
+        align-items: center;
+    }
+    .na{
+        border-width: 1px;
+        border-style: inset;
+        border-color: black;
+        width: 160px;
+        height: 20px;
+    
+      }
+      .la{
+        border-width: 1px;
+        border-style: inset;
+        border-color: black;
+        width: 160px;
+        height: 20px;
+        -moz-box-align: center;
+    
+      }
+.List {
+  width: 320px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 0; 
+}
+.Name{
+    width: 320px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0;
+  }
+  .ba{
+    border-width: 1px;
+    border-style: inset;
+    border-color: black;
+    width: 48px;
+    height: 20px;
+    
+
+  }
+  .br{
+    border-width: 1px;
+    border-style: inset;
+    border-color: black;
+    width: 48px;
+    height: 20px;
+
+  }
+  .mi{
+    border-width: 1px;
+    border-style: inset;
+    border-color: black;
+    width: 48px;
+    height: 20px;
+
+  }
+  .or{
+    border-width: 1px;
+    border-style: inset;
+    border-color: black;
+    width: 48px;
+    height: 20px;
+
+  }
