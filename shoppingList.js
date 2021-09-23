@@ -1,4 +1,5 @@
-
+const add = document.querySelector('button')
+add.onclick= alert()
 let shoppingList = 
 [
     {
