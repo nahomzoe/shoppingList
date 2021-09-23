@@ -1,3 +1,4 @@
+
 let shoppingList = 
 [
     {
@@ -129,8 +130,10 @@ const printList = printAll()
 console.log(printList)*/
 
 
-
-
+const add =document.querySelector('button')
+add.addEventListener('eventlistner', function(e) {
+   return updatedItems
+  })
 
 
 
