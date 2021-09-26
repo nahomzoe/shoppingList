@@ -1,4 +1,4 @@
-const add = document.querySelector('button')
+
 
 /*let shoppingList = 
 [
@@ -81,7 +81,7 @@ console.log(uncheckedItemsCount)
 const updatedItems = addItems()
 console.log(updatedItems)*/
 
-function addItem(itemName,itemQuantity) {
+/*function addItem(itemName,itemQuantity) {
     /*function addItem(itemName, itemQuantity) {
     if (typeof itemName !== 'string' || itemName.length === 0) {
         return false;
@@ -92,7 +92,7 @@ function addItem(itemName,itemQuantity) {
     }*/
    
 
-    if (typeof itemName === 'string' && itemName.length > 0 && typeof itemQuantity === 'number'&& itemQuantity >0){
+   /* if (typeof itemName === 'string' && itemName.length > 0 && typeof itemQuantity === 'number'&& itemQuantity >0){
     let updatingItems = shoppingList.push(
         { name: itemName,
           quantity: itemQuantity,
@@ -131,11 +131,14 @@ const printList = printAll()
 console.log(printList)*/
 
 
+
+
+
 const add =document.querySelector('button')
-add.addEventListener('eventlistner', function(e) {
-   return updatedItems
-  })
+let x = document.querySelector("item-name").value;
+let y = document.getElementById("item-quantity").value;
+alert(x)
+add.onclick = function(){
+    const newRow = '<div><label>' + x + '<label/>' + '<input' + y + '/> <span class="close-button">&times;</span></div>'
+};
 
-
-
-   
