@@ -138,7 +138,7 @@ const add =document.querySelector('button')
 let x = document.querySelector("item-name").value;
 let y = document.getElementById("item-quantity").value;
 alert(x)
-add.onclick = function(){
+add.addEventListener("click",function(){
     const newRow = '<div><label>' + x + '<label/>' + '<input' + y + '/> <span class="close-button">&times;</span></div>'
-};
+});
 
