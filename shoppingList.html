@@ -8,16 +8,48 @@
   
     <h1 id=shopping>Shopping List</h1>
     <div class="item-entry" action='' >
-        <div><label>Name<input type='text' value='name' class='item-name'/></div>
-        <div><label>Quantity<input type='text' value='000' class='item-quantity'/></div>
+       
+        <div><label>Name<input type="text" class="item-name" id="name-field"/></div>
+        <div><label>Quantity<input type="text" class="item-quantity" id="quantity-field"/></div>
     </div>
-        <button class ='button'>Add</button>
-    <div class ="list" action='' >
-        <div> <label class='item-list'>Banana<label/> <input type='number' class='list-box'/> <span class="close-button">&times;</span></div>
-        <div> <label class='item-list'>Bread<label/>   <input type='number' class='list-box'/> <span class="close-button">&times;</span></div>
-        <div> <label class='item-list'>Milk<label/>   <input type='number' class='list-box'/> <span class="close-button">&times;</span></div>
-        <div> <label class='item-list'>Orange<label/> <input type='number' class='list-box'/> <span class="close-button">&times;</span></div>
-    </div>
+        <button class ="button">Add</button>
+    <div class ="list">
+        <div> 
+           <label class="item-list">Banana</label> 
+           <input type="number"  class="list-box"/> 
+           <input type="checkbox" id="check-box"> 
+           <span  class="close-button">&times;</span>
+        </div>
+        <div> 
+           <label class="item-list">Bread</label> 
+           <input type="number" class="list-box"/> 
+           <input type="checkbox" id="check-box"> 
+           <span class="close-button">&times;</span>
+        </div>
+        <div> 
+           <label class="item-list">Milk</label>   
+           <input type="number"  class="list-box"/> 
+           <input type="checkbox" id="check-box"> 
+           <span class="close-button">&times;</span>
+        </div>
+        <div> 
+           <label class="item-list">Orange</label> 
+           <input type="number"  class="list-box"/> 
+           <input type="checkbox" id="check-box"> 
+           <span class="close-button">&times;</span>
+         </div>
+        <input type="submit" value="Order">
+      </div>
+
+
+
+
+      <div class = orderedList >
+         <div > 
+            <label class="item-list">Orange</label> 
+            <input type="number"  class="list-box"/> 
+         </div>  
+      </div>
   
     <script type="text/javascript" src="shoppingList.js"></script> 
    

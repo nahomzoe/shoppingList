@@ -131,14 +131,106 @@ const printList = printAll()
 console.log(printList)*/
 
 
+/*
+let shoppingList = 
+[
+    {
+        name: 'Milk',
+        quantity: 5,
+        checked: true
+    },
+    {
+        name: 'Oil',
+        quantity: 3,
+        checked: true
+    },
+    {
+        name: 'Banana',
+        quantity:'6',
+        checked: false
+    },
+    {
+        name: 'Salt',
+        quantity: 1,
+        checked: true
+    },
+];
 
+function render() {
+    const list = document.querySelector('.list');
+    list.innerHTML = "";
 
+    shoppingList.forEach((item) => {
+        const newRow = '<div>'
+                    + '<label class="item-list">' + item.name + '</label>'
+                    + '<input type="number" class="list-box" value="' + item.quantity + '"/>'
+                    + '<span class="close-button" data-name="' + item.name + '">&times;</span>'
+                 + '</div>';
+    
+        list.innerHTML = newRow + list.innerHTML;
+    });
 
-const add =document.querySelector('button')
-let x = document.querySelector("item-name").value;
-let y = document.getElementById("item-quantity").value;
-alert(x)
-add.addEventListener("click",function(){
-    const newRow = '<div><label>' + x + '<label/>' + '<input' + y + '/> <span class="close-button">&times;</span></div>'
+    attachDeleteListener();
+}
+
+function addItem(itemName,itemQuantity) {
+    shoppingList.push(
+        { 
+            name: itemName,
+            quantity: itemQuantity,
+            checked: false
+        }
+    )
+}
+
+const addButton =document.querySelector('button')
+
+addButton.addEventListener('click', function(){
+    const nameValue = document.getElementById("name-field").value;
+    const quantityValue = document.getElementById("quantity-field").value;
+    
+   addItem(nameValue, quantityValue);
+
+   render();
 });
+
+function deleteItem(itemName){
+    shoppingList = shoppingList.filter((item) => item.name != itemName)
+    return shoppingList
+}
+
+function attachDeleteListener() {
+    document.querySelectorAll('.close-button').forEach((deleteBtn) => {
+        deleteBtn.addEventListener('click', function (event) {
+            // event.target is the element that the event (click) was performed on
+            const itemName = event.target.getAttribute("data-name");
+            deleteItem(itemName);
+            render();
+        });
+    })
+}
+
+render();*/
+
+const addButton = document.querySelector('button');
+addButton.addEventListener('click',function(){
+    const nameValue = document.getElementById('name-field').value;
+    const quantityValue = document.getElementById('quantity-field').value;
+ const newRow = '<div>'
+                 +'<label class="item-list">' + nameValue + '</label>'
+                 +'<input type="number"  value="'+quantityValue +'"class="list-box"/>'
+                 +'<input type="checkbox" id="check-box">' 
+                 +'<span class="close-button">&times;</span>'
+                 +'</div>' ;
+const list = document.querySelector('.list');
+list.innerHTML = newRow + list.innerHTML;
+                 
+});
+
+const closeButton = document.querySelector('close-button')
+closeButton.addEventListener('Click',function(){
+   
+})
+
+
 

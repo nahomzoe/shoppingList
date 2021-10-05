@@ -1,47 +1,42 @@
-/*.Name{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    }*/
-    /*.body{
-        text-align: center;
-    }*/
-    .button{
-        width: 120px;
-        height: 40px;
-        border-radius: 12px;
-       
-        margin-left: 12%;
-        margin-bottom: 2%;
-        margin-top: 2%;
-    }
-    .item-name{
-        border-width: 1px;
-        border-style: inset;
-        border-color: black;
-        width: 160px;
-        height: 20px;
-        margin-left: 18.4%;
-        margin-bottom: 2%;
+
+.button{
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
     
-      }
-      .item-quantity{
-        border-width: 1px;
-        border-style: inset;
-        border-color: black;
-        width: 80px;
-        height: 20px;
-        -moz-box-align: center;
-        margin-left: 12.8%;
-        margin-bottom: 2%;
-    
-      }
+    margin-left: 12%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.item-name{
+    border-width: 1px;
+    border-style: inset;
+    border-color: black;
+    width: 160px;
+    height: 20px;
+    margin-left: 18.4%;
+    margin-bottom: 2%;
+
+}
+.item-quantity{
+    border-width: 1px;
+    border-style: inset;
+    border-color: black;
+    width: 80px;
+    height: 20px;
+    -moz-box-align: center;
+    margin-left: 12.8%;
+    margin-bottom: 2%;
+
+}
 .item-entry{
     width: 320px;
     padding: 10px;
     border: 1px solid black;
     margin: 10;
-    }
+}
+
 .list {
   width: 320px;
   padding: 10px;
@@ -49,7 +44,7 @@
   margin: 0; 
 }
 
-  .list-box{
+.list-box{
     border-width: 1px;
     border-style: inset;
     border-color: black;
@@ -57,43 +52,21 @@
     height: 20px;
     margin-left: 15%;
     margin-bottom: 2%;
-    
-    
-
-  }
-  .close-button{
+}
+.close-button{
     margin-left: 30%;
     margin-top: 0%;
-  }
-.item-list{
-    max-width: 20ch;
-   padding-right: 10%;
 }
 
-  /*.br{
-    border-width: 1px;
-    border-style: inset;
-    border-color: black;
-    width: 48px;
-    height: 20px;
-    margin-left: 16.7%;
-    margin-bottom: 2%;
+.item-list {
+    max-width: 10ch;
+    width: 10ch;
+    display: inline-block;
+}
+.orderedList {
+    width: 320px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0; 
+    margin-top: 50px;
   }
-  .mi{
-    border-width: 1px;
-    border-style: inset;
-    border-color: black;
-    width: 48px;
-    height: 20px;
-    margin-left: 19.1%;
-    margin-bottom: 2%;
-  }
-  .or{
-    border-width: 1px;
-    border-style: inset;
-    border-color: black;
-    width: 48px;
-    height: 20px;
-    margin-left: 15.2%;
-    margin-bottom: 2%;
-  }*/
