@@ -229,7 +229,18 @@ list.innerHTML = newRow + list.innerHTML;
 
 const closeButton = document.querySelector('close-button')
 closeButton.addEventListener('Click',function(){
-   
+   console.log('go')
+})
+
+const makeOrder =document.getElementById('make-order')
+console.log(makeOrder)
+makeOrder.addEventListener('click',function(){
+     const nameValue = document.getElementById('name-field').value;
+     const quantityValue = document.getElementById('quantity-field').value;
+     const checkBox = documnet.getElementById('check-box')
+     
+                 const orderedList = document.querySelector('.orderedList');           
+     if(checkBox == true){orderedList.innerHTML = nameValue + quantityValue; }
 })
 
 
