@@ -227,21 +227,27 @@ list.innerHTML = newRow + list.innerHTML;
                  
 });
 
-const closeButton = document.querySelector('close-button')
-closeButton.addEventListener('Click',function(){
-   console.log('go')
+const makeOrder = document.getElementById('make-order')
+makeOrder.addEventListener('click',function(){
+    const nameValue = document.getElementById('name-field').value;
+    const quantityValue = document.getElementById('quantity-field').value;
+    const checkBox = document.getElementById('check-box')
+    const newOrder = '<div>'
+                     +'<label class="item-list">' + nameValue + '</label>'
+                     +'<input type="number"  value="'+quantityValue +'"class="list-box"/>'
+                     +'</div>';
+    const list = document.querySelector('.list');                
+    const orderList = document.querySelector('.orderList');
+      
+    for (const checkBox of list.innerHTML){
+        if(checkBox == ? //true or checked // ) {
+        orderList.innerHTML = newOrder + orderList.innerHTML;
+        }
+      }
+     
 })
 
-const makeOrder =document.getElementById('make-order')
-console.log(makeOrder)
-makeOrder.addEventListener('click',function(){
-     const nameValue = document.getElementById('name-field').value;
-     const quantityValue = document.getElementById('quantity-field').value;
-     const checkBox = documnet.getElementById('check-box')
-     
-                 const orderedList = document.querySelector('.orderedList');           
-     if(checkBox == true){orderedList.innerHTML = nameValue + quantityValue; }
-})
+
 
 
 
