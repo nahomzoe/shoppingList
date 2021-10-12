@@ -227,6 +227,7 @@ list.innerHTML = newRow + list.innerHTML;
                  
 });
 
+// Need big correction 
 const makeOrder = document.getElementById('make-order')
 makeOrder.addEventListener('click',function(){
     const nameValue = document.getElementById('name-field').value;
@@ -239,11 +240,11 @@ makeOrder.addEventListener('click',function(){
     const list = document.querySelector('.list');                
     const orderList = document.querySelector('.orderList');
       
-    for (const checkBox of list.innerHTML){
-        if(checkBox == ? //true or checked // ) {
-        orderList.innerHTML = newOrder + orderList.innerHTML;
-        }
-      }
+        if (checkBox.checked == true){
+            orderList.innerHTML = newOrder + orderList.innerHTML;
+          } else {
+            "none";
+          }
      
 })
 
