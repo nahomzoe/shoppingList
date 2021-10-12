@@ -44,7 +44,7 @@
   margin: 0; 
 }
 
-.list-box{
+.list-quantity{
     border-width: 1px;
     border-style: inset;
     border-color: black;
@@ -58,7 +58,7 @@
     margin-top: 0%;
 }
 
-.item-list {
+.list-name {
     max-width: 10ch;
     width: 10ch;
     display: inline-block;
@@ -72,7 +72,7 @@
     margin-bottom: 2%;
     margin-top: 2%;
 }
-.orderList {
+.order-list {
     width: 320px;
     padding: 10px;
     border: 1px solid black;

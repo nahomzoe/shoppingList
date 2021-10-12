@@ -230,21 +230,33 @@ list.innerHTML = newRow + list.innerHTML;
 // Need big correction 
 const makeOrder = document.getElementById('make-order')
 makeOrder.addEventListener('click',function(){
-    const nameValue = document.getElementById('name-field').value;
-    const quantityValue = document.getElementById('quantity-field').value;
-    const checkBox = document.getElementById('check-box')
-    const newOrder = '<div>'
-                     +'<label class="item-list">' + nameValue + '</label>'
-                     +'<input type="number"  value="'+quantityValue +'"class="list-box"/>'
+    // I want to add checked item from list box to Order list 
+    // get all the item from the list box
+    const orderList = document.querySelector('.order-list');
+    const items = document.querySelectorAll('.list > div')
+    items.forEach((item)=>{
+        
+        const checkBox = item.querySelector(".order-checkbox");
+        const listName = item.querySelector(".list-name");
+        const listQuantity = item.querySelector(".list-quantity");
+        if (checkBox.checked) { 
+            const newOrder = '<div>'
+                     +'<label class="item-list">' + listName.textContent + '</label>'
+                     +'<input type="number"  value="'+listQuantity.value+'"class="list-box"/>'
                      +'</div>';
-    const list = document.querySelector('.list');                
-    const orderList = document.querySelector('.orderList');
+            orderList.innerHTML = newOrder + orderList.innerHTML
+            console.log('chechked')
+        } else {
+            
+            console.log('unchecked')
+        }
+    })
+
+     
+                 
+    
       
-        if (checkBox.checked == true){
-            orderList.innerHTML = newOrder + orderList.innerHTML;
-          } else {
-            "none";
-          }
+       
      
 })
 
