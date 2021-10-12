@@ -217,8 +217,8 @@ addButton.addEventListener('click',function(){
     const nameValue = document.getElementById('name-field').value;
     const quantityValue = document.getElementById('quantity-field').value;
  const newRow = '<div>'
-                 +'<label class="item-list">' + nameValue + '</label>'
-                 +'<input type="number"  value="'+quantityValue +'"class="list-box"/>'
+                 +'<label class="list-name">' + nameValue + '</label>'
+                 +'<input type="number"  value="'+quantityValue +'"class="list-quantity"/>'
                  +'<input type="checkbox" id="check-box">' 
                  +'<span class="close-button">&times;</span>'
                  +'</div>' ;
@@ -241,16 +241,16 @@ makeOrder.addEventListener('click',function(){
         const listQuantity = item.querySelector(".list-quantity");
         if (checkBox.checked) { 
             const newOrder = '<div>'
-                     +'<label class="item-list">' + listName.textContent + '</label>'
-                     +'<input type="number"  value="'+listQuantity.value+'"class="list-box"/>'
+                     +'<label class="list-name">' + listName.textContent + '</label>'
+                     +'<input type="number"  value="'+listQuantity.value+'"class="list-quantity"/>'
                      +'</div>';
             orderList.innerHTML = newOrder + orderList.innerHTML
-            console.log('chechked')
+            
         } else {
             
-            console.log('unchecked')
-        }
-    })
+            
+        };
+    });
 
      
                  
